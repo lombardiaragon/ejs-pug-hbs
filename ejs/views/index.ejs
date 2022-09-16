@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="h2 col-7 text-center py-5">Formulario de ingreso de Productos</h1>
+            <form action="/productos" method="POST" class="col-6">
+                <div class="mb-3">
+                    <label for="formTitle" class="form-label">TITULO</label>
+                    <input type="text" class="form-control" id="formTitle" aria-describedby="emailHelp" name="title">
+                    <div id="emailHelp" class="form-text">Ingrese nombre del producto.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="formPrice" class="form-label">PRECIO</label>
+                    <input type="text" class="form-control" id="formPrice" name="price">
+                    <div id="emailHelp" class="form-text">Ingrese precio del producto.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="formThumbnail" class="form-label">IMAGEN</label>
+                    <input type="text" class="form-control" id="formThumbnail" name="thumbnail">
+                    <div id="emailHelp" class="form-text">Ingrese imágen del producto.</div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-lg btn-primary">Cargar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="m-5 d-flex justify-content-center border-top">
+        <a class="my-4 btn btn-dark" href="/productos">Ver Productos</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
